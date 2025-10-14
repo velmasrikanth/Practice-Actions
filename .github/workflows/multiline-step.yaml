@@ -1,0 +1,17 @@
+name: Multi-line step workflow
+
+on:
+  push
+
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v5
+      
+      - name: Multi-line commands execution
+        run: |
+          echo "Multi line commands execution"
+          ls -lrta
+          cat README.md
