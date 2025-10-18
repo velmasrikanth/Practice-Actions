@@ -12,7 +12,7 @@ jobs:
       - name: install cowsay and print cowsay
         run: |
           sudo apt update && sudo apt install cowsay -y
-          cowsay -f lion "Run for cover,....I am a Lion.." >> lion.txt
-          grep -i "lion" lion.txt
-          cat lion.txt
+          cowsay -f dragon "Run for cover,....I am a DRAGON.." >> dragon.txt
+          grep -i "dragon" dragon.txt
+          cat dragon.txt
           ls -lrta
